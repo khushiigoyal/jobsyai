@@ -10,7 +10,6 @@ app.use(express.json());
 
 const API_KEY = process.env.GEMINI_API_KEY;
 
-// health check
 app.get("/", (req, res) => {
   res.send("✅ Backend is RUNNING! You can now go to your website.");
 });
