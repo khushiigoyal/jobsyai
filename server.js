@@ -6,7 +6,7 @@ const app = express();
 const port = 5000;
 
 // --- 1. PASTE YOUR KEY HERE ---
-const API_KEY = "AIzaSyBVBxNnqM_25uAqKfxRrtgK-EXA4uo2VDw"; 
+const API_KEY = process.env.GEMINI_API_KEY;
 
 // --- 2. ALLOW CONNECTION (CORS) ---
 app.use(cors({ origin: '*' })); 
